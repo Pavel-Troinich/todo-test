@@ -1,0 +1,49 @@
+.todoitem {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  &__task {
+    display: block;
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__btnBlock {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__btn {
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+  }
+
+  &__btn:hover {
+    border: 1px solid #000000;
+  }
+
+  &__btn:active {
+    transform: scale(.98);
+  }
+
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__task {
+      font-size: 16px;
+    }
+
+    &__btnBlock {
+      gap: 20px;
+    }
+  }
+}
