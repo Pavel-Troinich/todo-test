@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/todo-test/static/css/main.ad7ecd92.css",
-    "main.js": "/todo-test/static/js/main.39bd801b.js",
+    "main.js": "/todo-test/static/js/main.1ee0f7df.js",
     "static/media/trash.svg": "/todo-test/static/media/trash.fc8bdd11b58189c9a55734e8c46595d9.svg",
     "static/media/edit.svg": "/todo-test/static/media/edit.cb8d238f1bcc1b8b32e933809fc671f6.svg",
     "static/media/add.svg": "/todo-test/static/media/add.a7ebf62ef3c73e6ad48c1d3a37117bca.svg",
@@ -9,10 +9,10 @@
     "static/media/redo.svg": "/todo-test/static/media/redo.c21558d84a0ec0d7e61ec7c43a025810.svg",
     "static/media/done.svg": "/todo-test/static/media/done.c6136f108fd9025c33befe603c74d036.svg",
     "main.ad7ecd92.css.map": "/todo-test/static/css/main.ad7ecd92.css.map",
-    "main.39bd801b.js.map": "/todo-test/static/js/main.39bd801b.js.map"
+    "main.1ee0f7df.js.map": "/todo-test/static/js/main.1ee0f7df.js.map"
   },
   "entrypoints": [
     "static/css/main.ad7ecd92.css",
-    "static/js/main.39bd801b.js"
+    "static/js/main.1ee0f7df.js"
   ]
 }
