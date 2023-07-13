@@ -20,6 +20,7 @@ const TodoList = () => {
           className={styles.todolist__addInput}
           type="text"
           value={value}
+          placeholder="Write task here..."
           onChange={(e) => setValue(e.target.value)}
         />
         <button
