@@ -9,9 +9,8 @@ import { addTodo } from "../../store/reducers/todoReducer";
 
 const TodoList = () => {
   const [value, setValue] = useState("");
-  const dispatch = useDispatch();
+  const dispatch: any = useDispatch();
   const { todos } = useTypedSelector((state) => state.todo);
-  console.log(todos);
 
   return (
     <div className={styles.todolist}>
@@ -28,7 +27,6 @@ const TodoList = () => {
           onClick={() => {
             if (value) {
               setValue("");
-              // @ts-ignore
               dispatch(addTodo(value));
             }
           }}

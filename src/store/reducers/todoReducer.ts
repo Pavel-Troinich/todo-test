@@ -1,19 +1,12 @@
 import { todos } from "../../data/todos";
 import { Dispatch } from "redux";
 import { v4 } from "uuid";
+import { TodoAction, TodoState } from "./types";
 
 const ADD = "ADD";
 const DELETE = "DELETE";
 const TOGGLE = "TOGGLE";
-
-interface TodoState {
-  todos: any[];
-}
-
-interface TodoAction {
-  type: string;
-  payload?: any;
-}
+const CHANGE = "CHANGE";
 
 const initialState: TodoState = {
   todos: todos,
@@ -47,6 +40,16 @@ export const todoReducer = (
           return todo;
         }),
       };
+    case CHANGE:
+      return {
+        ...state,
+        todos: state.todos.map((todo) => {
+          if (todo.id === action.payload.id) {
+            return { ...todo, title: action.payload.title };
+          }
+          return todo;
+        }),
+      };
     default:
       return state;
   }
@@ -67,5 +70,11 @@ export const deleteTodo = (id: string) => {
 export const toggleTodo = (id: string) => {
   return (dispatch: Dispatch<TodoAction>) => {
     return dispatch({ type: TOGGLE, payload: id });
+  };
+};
+
+export const changeTodo = (id: string, title: string) => {
+  return (dispatch: Dispatch<TodoAction>) => {
+    return dispatch({ type: CHANGE, payload: { id, title } });
   };
 };

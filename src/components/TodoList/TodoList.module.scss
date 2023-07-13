@@ -26,10 +26,10 @@
     font-size: 18px;
     border: none;
     border-radius: 10px;
-  }
 
-  &__addInput:focus {
-    outline: none;
+    &:focus {
+      outline: none;
+    }
   }
 
   &__addBtn {
@@ -41,14 +41,14 @@
     font-size: 18px;
     line-height: 100%;
     color: #ffffff;
-  }
 
-  &__addBtn:hover {
-    background-color: #18b218;
-  }
+    &:hover {
+      background-color: #18b218;
+    }
 
-  &__addBtn:active {
-    transform: scale(.99);
+    &:active {
+      transform: scale(.99);
+    }
   }
 
   @media (max-width: 800px) {
