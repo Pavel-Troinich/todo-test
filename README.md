@@ -1,8 +1,19 @@
-# Getting Started with Create React App
+# Todo List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Project requirements: [Link](https://docs.google.com/document/d/1pi3DlGltYaddgObFd-fJS9neihnZPhhuzNQOj76av-4/edit)
 
-## Available Scripts
+## Getting Started
+
+To run the project, clone this repository to your computer by running this command in the destination directory on the command line:
+
+### `git clone https://github.com/Pavel-Troinich/todo-test.git`
+
+Then install the necessary dependencies using the command in the project directory:
+
+### `npm install`
+
+
+### Use the following scripts to work with the project:
 
 In the project directory, you can run:
 
