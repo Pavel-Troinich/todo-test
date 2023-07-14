@@ -1,5 +1,5 @@
 .todolist {
-  max-width: 800px;
+  max-width: 70%;
   min-width: 320px;
   margin: 50px auto;
   padding: 0 20px;
@@ -51,7 +51,13 @@
     }
   }
 
+  @media (max-width: 1200px) {
+    max-width: 85%;
+  }
+
   @media (max-width: 800px) {
+    max-width: 100%;
+    min-height: 100vh;
     margin: 0 auto;
     border-radius: 0;
   }
